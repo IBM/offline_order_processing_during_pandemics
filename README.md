@@ -57,7 +57,7 @@ Please follow the below to setup and run this code pattern.
 Clone the `repo-name` repo locally. In a terminal, run:
 
 ```bash
-$ git clone https://github.com/IBM/repo-name
+$ git clone https://github.com/IBM/order_processing_during_pandemics
 ```
 
 ### 7. Add the Credentials to the Application
