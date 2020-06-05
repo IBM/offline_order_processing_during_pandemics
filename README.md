@@ -48,7 +48,80 @@ Please follow the below to setup and run this code pattern.
 4. [Setup Watson Knowledge Studio](#4-setup-watson-knowledge-studio)
 5. [Setup Watson Natural Language Understanding](#5-setup-watson-natural-language-understanding)
 6. [Setup IBM Db2](#6-setup-ibm-db2)
-7. [Run locally](#7-run-locally)
-8. [Deploy and run on cloud](#8-deploy-and-run-on-cloud)
+7. [Add the Credentials to the Application](#7-add-the-credentials-to-the-application)
+8. [Deploy the Application to Cloud Foundry](#8-deploy-the-application-to-cloud-foundry)
 9. [Analyze the results](#9-analyze-the-results)
+
+### 1. Clone the repo
+
+Clone the `repo-name` repo locally. In a terminal, run:
+
+```bash
+$ git clone https://github.com/IBM/repo-name
+```
+
+### 7. Add the Credentials to the Application
+
+- Open the `credentials1.json` file from the root directory and paste the Db2 Credentials and save the file.
+
+- Open `app.py` from the root directory, goto line number `27` and insert the natural language understanding API Key `apikey`, goto line number `28` and insert the natural language understanding URL `nlu_url` and lastly goto line number `29` and insert the knowledge studio model ID `wks_model_id`. 
+
+<pre><code># Initialize WKS Model Credentials
+
+apikey = <b>'YOUR-API-KEY-HERE'</b>
+nlu_url = <b>'YOUR-URL-HERE'</b>
+wks_model_id = <b>'YOUR-WKS-MODEL-ID-HERE'</b>
+
+</code></pre>
+
+### 8. Deploy the Application to Cloud Foundry
+
+* Make sure you have installed [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started&locale=en-US) before you proceed.
+
+* Log in to your IBM Cloud account, and select an API endpoint.
+```bash
+$ ibmcloud login
+```
+
+>NOTE: If you have a federated user ID, instead use the following command to log in with your single sign-on ID.
+```bash
+$ ibmcloud login --sso
+```
+
+* Target a Cloud Foundry org and space:
+```bash
+$ ibmcloud target --cf
+```
+
+* From within the _cloned directory_ push your app to IBM Cloud.
+```bash
+$ ibmcloud cf push
+```
+
+* Once Deployed You will see output on your terminal as shown, verify the state is _`running`_:
+
+<pre><code>Invoking 'cf push'...
+
+Pushing from manifest to org manoj.jahgirdar@in.ibm.com / space dev as manoj.jahgirdar@in.ibm.com...
+
+...
+
+Waiting for app to start...
+
+name:              order-processing-pandemic
+requested state:   started
+routes:            <b> order-processing-pandemic.xx-xx.mybluemix.net </b>
+last uploaded:     Sat 16 May 18:05:16 IST 2020
+stack:             cflinuxfs3
+buildpacks:        python
+
+type:            web
+instances:       1/1
+memory usage:    256M
+start command:   python app.py
+     state     since                  cpu     memory           disk           details
+#0   <b>running</b>   2020-05-16T12:36:15Z   25.6%   116.5M of 256M   796.2M of 1
+</code></pre>
+
+* Once the app is deployed you can visit the `routes` to view the application.
 
