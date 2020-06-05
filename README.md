@@ -42,4 +42,13 @@ When the reader has completed this Code Pattern, they will understand how to:
 
 Please follow the below to setup and run this code pattern.
 
+1. [Clone the repo](#1-clone-the-repo)
+2. [Setup Watson Speech to Text ](#2-setup-watson-speech-to-text)
+3. [Setup Watson Language Translator](#3-setup-watson-language-translator)
+4. [Setup Watson Knowledge Studio](#4-setup-watson-knowledge-studio)
+5. [Setup Watson Natural Language Understanding](#5-setup-watson-natural-language-understanding)
+6. [Setup IBM Db2](#6-setup-ibm-db2)
+7. [Run locally](#7-run-locally)
+8. [Deploy and run on cloud](#8-deploy-and-run-on-cloud)
+9. [Analyze the results](#9-analyze-the-results)
 
