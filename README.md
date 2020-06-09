@@ -63,7 +63,7 @@ $ git clone https://github.com/IBM/order_processing_during_pandemics
 
 Create [Watson Speech to Text service](https://cloud.ibm.com/catalog/services/speech-to-text)
 
-Copy the credentials as shown below,
+Make a note of the Watson Speech to Text API Key and URL credentials as shown below,
 
 ![Watson_STT](doc/source/images/STT.png)
 
@@ -71,7 +71,7 @@ Copy the credentials as shown below,
 
 Create [Watson Language Translator](https://cloud.ibm.com/catalog/services/language-translator)
 
-Copy the credentials as shown below,
+Make a note of the Watson Language Translator API Key and URL credentials as shown below,
 
 ![Watson_LT](doc/source/images/LT.png)
 
