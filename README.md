@@ -60,6 +60,117 @@ Clone the `repo-name` repo locally. In a terminal, run:
 $ git clone https://github.com/IBM/order_processing_during_pandemics
 ```
 
+### 4. Setup Watson knowledge studio
+
+Create the following services:
+
+* [**Natural Language Understanding**](https://cloud.ibm.com/catalog/services/natural-language-understanding)
+* [**Watson Knowledge Studio**](https://cloud.ibm.com/catalog/services/knowledge-studio)
+
+#### i. Launch Watson Knowledge Studio and create workspace
+
+* Launch the **Watson Knowledge Studio** tool.
+![Launch_WKS](doc/source/images/Launch_WKS.png)
+
+* click on **Create workspace**.
+
+![create_wks_workspace](doc/source/images/CreateWorkSpace1.png)
+
+* Enter a unique name and press **Create**.
+
+![create_wks_workspace](doc/source/images/CreateWorkSpace.png)
+
+#### ii. Upload Type System
+
+A type system allows us to define things that 
+are specific to review documents, such as product and brand names. The type system controls how content can be annotated by defining the types of entities that can be labeled and how relationships among different entities can be labeled.
+
+To upload our pre-defined type system, from the **Assets** -> **Entity Types** panel, press the **Upload** button to import the Type System file [docs/TypeSystems.json](docs/TypeSystems.json) found in the local repository.
+
+![upload_type_system](doc/source/images/upload-type-system.png)
+
+Press the **Upload** button. This will upload a set of Entity Types and Relation Types:
+
+![wks_entity_types](doc/source/images/entity-types.png)
+
+#### iii. Import Corpus Documents
+
+Corpus documents are required to train our machine-learning annotator component. For this code pattern, the corpus documents will contain sample order processing converstation documents.
+
+* From the **Assets** -> **Documents** panel, press the **Upload Document Sets** button to import a Document Set file. 
+
+![import_corpus](doc/source/images/Upload_Corpus_Button.png)
+
+
+* Use the corpus documents file [docs/training_Files.zip](docs/training_Files.zip) found in the local repository.
+
+Once uploaded, you should see a set of documents:
+
+![wks_document_set](doc/source/images/Upload_Training_Files.png)
+
+
+#### iv. Create Custom Model
+
+Since the corpus documents that were uploaded were already pre-annotated and included ground truth, it is possible to build the machine learning annotator directly without the need for performing human annotations.
+
+* Go to the **Machine Learning Model** -> **Performance** panel, and press the **Train and Evaluate** button.
+
+![wks_training_sets](doc/source/images/Train_and_Evaluate1.png)
+
+* Click on Edit Settings to ensure you are selecting the corpus document set which we have uploaded in previous step.
+
+![wks_training_sets](doc/source/images/Trand_and_Evaluate_Settings.png)
+
+* From the **Document Set** name list, select the annotation sets **Import**. Also, make sure that the option **Run on existing training, test and blind sets** is checked.  Press the **Train & Evaluate** button.
+
+![wks_training_sets](doc/source/images/DocumnetSetSelect.png)
+
+This process may take few minutes to complete. Progress will be shown in the upper right corner of the panel.
+
+You can view the log files of the process by clicking the **View Log** button.
+
+Once complete, you will see the results of the train and evaluate process as successful.
+
+
+#### v. Deploy the machine learning model to Natural Language Understanding
+
+* Now we can deploy our new model to the already created **Natural Language Understanding** service. Navigate to the **Versions** menu on the left and press **Create Version**.
+
+![Create_Version_page](doc/source/images/Create_Version.png)
+
+* Give a description on the version that you want to deploy.
+
+![wks_snapshot_page](doc/source/images/snapshot-page.png)
+
+The new version will now be available for deployment to Natural Language Understanding. To start the process, click the **Deploy** button associated with your version.
+
+![wks_model_version](doc/source/images/Deploy.png)
+
+Select the option to deploy to **Natural Language Understanding**.
+
+![wks_deployment_location](doc/source/images/Deploy_NLU.png)
+
+Enter your IBM Cloud account information to locate your **Natural Language Understanding** service to deploy to.
+
+![wks_deployment_location](doc/source/images/Deploy_NLU1.png)
+
+Once deployed, a **Model ID** will be created. Keep note of this value as it will be required later when configuring your credentials.
+
+![wks_deployment_model](doc/source/images/Model_id.png)
+
+> NOTE: You can also view this **Model ID** by clicking the **Deployed Models** link under the model version.
+
+#### vi. Get the credentials of NLU service.
+
+* Go to IBM Cloud dashboard resource list to note down the NLU credentilas. Click on https://cloud.ibm.com/resources
+
+![nlu_credentials1](doc/source/images/Launch_nlu1.png)
+
+* On the left navigation bar, click on Manage and copy API key and the url to a notepad which will be used in the next section  for UI integration.
+
+![nlu_show_credentials1](doc/source/images/Show_Credentials.png)
+
+
 ### 7. Add the Credentials to the Application
 
 - Open the `credentials1.json` file from the root directory and paste the Db2 Credentials and save the file.
