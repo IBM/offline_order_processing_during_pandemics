@@ -1,0 +1,6 @@
+
+---
+applications:
+ - name: order-processing-pandemic
+   random-route: true
+   memory: 256M

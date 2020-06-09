@@ -1,0 +1,13 @@
+FLASK==1.1.1
+Flask-Cors==3.0.8 
+Werkzeug==0.16.0
+numpy
+pandas
+word2number
+ibm_db
+ibmdbpy
+ibm-cos-sdk
+ibm_cloud_sdk_core
+ibm_watson
+speechRecognition
+googletrans
