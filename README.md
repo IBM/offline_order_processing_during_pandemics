@@ -74,7 +74,7 @@ Make a note of the Watson Language Translator API Key and URL credentials as sho
 
 ![Watson_LT](doc/source/images/LT.png)
 
-### 4. Setup Watson knowledge Studio and Watson Natural Language Understanding
+### 4. Setup Watson knowledge Studio and Natural Language Understanding
 
 Create the following services:
 
