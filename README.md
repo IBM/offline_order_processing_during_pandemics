@@ -85,7 +85,7 @@ Create the following services:
 A type system allows us to define things that 
 are specific to review documents, such as product and brand names. The type system controls how content can be annotated by defining the types of entities that can be labeled and how relationships among different entities can be labeled.
 
-To upload our pre-defined type system, from the **Assets** -> **Entity Types** panel, press the **Upload** button to import the Type System file [docs/TypeSystems.json](docs/TypeSystems.json) found in the local repository.
+To upload our pre-defined type system, from the **Assets** -> **Entity Types** panel, press the **Upload** button to import the Type System file [TypeSystems.json](TypeSystems.json) found in the repository.
 
 ![upload_type_system](doc/source/images/upload-type-system.png)
 
@@ -102,7 +102,7 @@ Corpus documents are required to train our machine-learning annotator component.
 ![import_corpus](doc/source/images/Upload_Corpus_Button.png)
 
 
-* Use the corpus documents file [docs/training_Files.zip](docs/training_Files.zip) found in the local repository.
+* Use the corpus documents file [training_Files.zip](corpus-Pre-annotated-training-files.zip) found in the local repository.
 
 Once uploaded, you should see a set of documents:
 
