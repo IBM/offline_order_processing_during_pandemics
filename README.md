@@ -45,12 +45,11 @@ Please follow the below to setup and run this code pattern.
 1. [Clone the repo](#1-clone-the-repo)
 2. [Setup Watson Speech to Text ](#2-setup-watson-speech-to-text)
 3. [Setup Watson Language Translator](#3-setup-watson-language-translator)
-4. [Setup Watson Knowledge Studio](#4-setup-watson-knowledge-studio)
-5. [Setup Watson Natural Language Understanding](#5-setup-watson-natural-language-understanding)
-6. [Setup IBM Db2](#6-setup-ibm-db2)
-7. [Add the Credentials to the Application](#7-add-the-credentials-to-the-application)
-8. [Deploy the Application to Cloud Foundry](#8-deploy-the-application-to-cloud-foundry)
-9. [Analyze the results](#9-analyze-the-results)
+4. [Setup Watson Knowledge Studio and Natural Language Understanding](#4-setup-watson-knowledge-studio-and-natural-language-understanding)
+5. [Setup IBM Db2](#5-setup-ibm-db2)
+6. [Add the Credentials to the Application](#6-add-the-credentials-to-the-application)
+7. [Deploy the Application to Cloud Foundry](#7-deploy-the-application-to-cloud-foundry)
+8. [Analyze the results](#8-analyze-the-results)
 
 ### 1. Clone the repo
 
@@ -75,7 +74,7 @@ Make a note of the Watson Language Translator API Key and URL credentials as sho
 
 ![Watson_LT](doc/source/images/LT.png)
 
-### 4. Setup Watson knowledge studio
+### 4. Setup Watson knowledge Studio and Watson Natural Language Understanding
 
 Create the following services:
 
@@ -185,8 +184,10 @@ Once deployed, a **Model ID** will be created. Keep note of this value as it wil
 
 ![nlu_show_credentials1](doc/source/images/Show_Credentials.png)
 
+### 5. Setup IBM Db2
 
-### 7. Add the Credentials to the Application
+
+### 6. Add the Credentials to the Application
 
 - Open the `credentials1.json` file from the root directory and paste the Db2 Credentials and save the file.
 
@@ -200,7 +201,7 @@ wks_model_id = <b>'YOUR-WKS-MODEL-ID-HERE'</b>
 
 </code></pre>
 
-### 8. Deploy the Application to Cloud Foundry
+### 7. Deploy the Application to Cloud Foundry
 
 * Make sure you have installed [IBM Cloud CLI](https://cloud.ibm.com/docs/cli?topic=cloud-cli-getting-started&locale=en-US) before you proceed.
 
@@ -251,3 +252,4 @@ start command:   python app.py
 
 * Once the app is deployed you can visit the `routes` to view the application.
 
+### 8. Analyze the results
