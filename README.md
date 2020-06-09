@@ -186,10 +186,17 @@ Once deployed, a **Model ID** will be created. Keep note of this value as it wil
 
 ### 5. Setup IBM Db2
 
+- Create a [Db2 service](https://cloud.ibm.com/catalog/services/db2).
+
+![](doc/source/images/db2resource.png)
+
+- Click on **Service credentials** and click on **New Credentials** to generate credentials and click on save credentials as shown.
+
+![](doc/source/images/db2credentials.gif)
 
 ### 6. Add the Credentials to the Application
 
-- Open the `credentials1.json` file from the root directory and paste the Db2 Credentials and save the file.
+- Open the `credentials1.json` file from the root directory and paste the Db2 Credentials created in [step 5](#5-setup-ibm-db2) and save the file.
 
 - Open `app.py` from the root directory, goto line number `27` and insert the natural language understanding API Key `apikey`, goto line number `28` and insert the natural language understanding URL `nlu_url` and lastly goto line number `29` and insert the knowledge studio model ID `wks_model_id`. 
 
