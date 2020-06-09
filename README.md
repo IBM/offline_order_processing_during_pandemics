@@ -53,7 +53,7 @@ Please follow the below to setup and run this code pattern.
 
 ### 1. Clone the repo
 
-Clone the `repo-name` repo locally. In a terminal, run:
+Clone the `order_processing_during_pandemics` repo locally. In a terminal, run:
 
 ```
 $ git clone https://github.com/IBM/order_processing_during_pandemics
