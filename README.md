@@ -189,7 +189,7 @@ Once deployed, a **Model ID** will be created. Keep note of this value as it wil
 
 - Create a [Db2 service](https://cloud.ibm.com/catalog/services/db2).
 
-![](doc/source/images/db2resource.png)
+![](doc/source/images/createdb2.png)
 
 - Click on **Service credentials** and click on **New Credentials** to generate credentials and click on save credentials as shown.
 
