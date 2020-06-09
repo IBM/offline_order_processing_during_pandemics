@@ -30,9 +30,9 @@ sessionid = ''
 
 # Initialize WKS Model Credentials
 
-apikey = 'Up-GkTdHRFPL9C6ZAzWOn6VT9U2A11DhqtNVnCNfg9g7'
-nlu_url = 'https://api.us-south.natural-language-understanding.watson.cloud.ibm.com/instances/1233c082-8af9-4546-b7d7-9f4bdea1a793'
-wks_model_id = '47fe6f4d-3a23-4014-8ef0-ce8fa5175213'
+apikey = 'YOUR-NLU-API-KEY-HERE'
+nlu_url = 'YOUR-URL-HERE'
+wks_model_id = 'YOUR-WKS-MODEL-ID-HERE'
 
 with open('credentials1.json', 'r') as credentialsFile:
     credentials1 = json.loads(credentialsFile.read())
