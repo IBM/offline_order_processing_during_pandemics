@@ -63,7 +63,7 @@ $ git clone https://github.com/IBM/order_processing_during_pandemics
 - Create [Watson Speech to Text service](https://cloud.ibm.com/catalog/services/speech-to-text)
 
 - In Speech To Text Service Resource Page, Click on **Services Credentials** and create a **New Credential** as shown.
-![](doc/source/images/create-stt-credentials.png)
+![](doc/source/images/create-stt-credentials.gif)
 
 - Once the credential is created, copy and save the credentials in a text file for using it in later steps in this code pattern.
 
