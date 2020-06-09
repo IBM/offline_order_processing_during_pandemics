@@ -56,21 +56,23 @@ Please follow the below to setup and run this code pattern.
 
 Clone the `repo-name` repo locally. In a terminal, run:
 
-```bash
+```
 $ git clone https://github.com/IBM/order_processing_during_pandemics
 ```
 ### 2. Setup Watson Speech to Text
 
-Create Watson Speech to Text service [here](https://cloud.ibm.com/catalog/services/speech-to-text)
+Create [Watson Speech to Text service](https://cloud.ibm.com/catalog/services/speech-to-text)
 
 Copy the credentials as shown below,
+
 ![Watson_STT](doc/source/images/STT.png)
 
 ### 3. Setup Watson Language Translator
 
-Create Watson Language Translator [here](https://cloud.ibm.com/catalog/services/language-translator)
+Create [Watson Language Translator](https://cloud.ibm.com/catalog/services/language-translator)
 
 Copy the credentials as shown below,
+
 ![Watson_LT](doc/source/images/LT.png)
 
 ### 4. Setup Watson knowledge studio
