@@ -196,6 +196,8 @@ Once deployed, a **Model ID** will be created. Keep note of this value as it wil
 
 ### 6. Add the Credentials to the Application
 
+- Open the `credentials.json` file from the root directory and paste the Watson Speech to Text created in [step 2](#2-setup-watson-speech-to-text) and save the file.
+
 - Open the `credentials1.json` file from the root directory and paste the Db2 Credentials created in [step 5](#5-setup-ibm-db2) and save the file.
 
 - Open `app.py` from the root directory, goto line number `27` and insert the natural language understanding API Key `apikey`, goto line number `28` and insert the natural language understanding URL `nlu_url` and lastly goto line number `29` and insert the knowledge studio model ID `wks_model_id`. 
