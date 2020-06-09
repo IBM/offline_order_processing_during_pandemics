@@ -179,7 +179,7 @@ Once deployed, a **Model ID** will be created. Keep note of this value as it wil
 
 <pre><code># Initialize WKS Model Credentials
 
-apikey = <b>'YOUR-API-KEY-HERE'</b>
+apikey = <b>'YOUR-NLU-API-KEY-HERE'</b>
 nlu_url = <b>'YOUR-URL-HERE'</b>
 wks_model_id = <b>'YOUR-WKS-MODEL-ID-HERE'</b>
 
