@@ -60,11 +60,12 @@ $ git clone https://github.com/IBM/order_processing_during_pandemics
 ```
 ### 2. Setup Watson Speech to Text
 
-Create [Watson Speech to Text service](https://cloud.ibm.com/catalog/services/speech-to-text)
+- Create [Watson Speech to Text service](https://cloud.ibm.com/catalog/services/speech-to-text)
 
-Make a note of the Watson Speech to Text API Key and URL credentials as shown below,
+- In Speech To Text Service Resource Page, Click on **Services Credentials** and create a **New Credential** as shown.
+![](doc/source/images/create-stt-credentials.png)
 
-![Watson_STT](doc/source/images/STT.png)
+- Once the credential is created, copy and save the credentials in a text file for using it in later steps in this code pattern.
 
 ### 3. Setup Watson Language Translator
 
