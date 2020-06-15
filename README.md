@@ -1,4 +1,4 @@
-# AI powered Backend system for order processing during pandemics
+# Use Watson Knowledge Studio and Speech To Text to automate offline order processing during pandemics
 
 How do we stop panic amongst people of hoarding essentials during lockdown? How do we maintain social distancing while procuring essentials?
 
