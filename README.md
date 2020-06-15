@@ -75,6 +75,8 @@ Make a note of the Watson Language Translator API Key and URL credentials as sho
 
 ![Watson_LT](doc/source/images/LT.png)
 
+> Note: This service can be used incase you are using regional languages. Watson Language Translator supports these [languages](https://cloud.ibm.com/docs/language-translator?topic=language-translator-translation-models)
+
 ### 4. Setup Watson knowledge Studio and Natural Language Understanding
 
 Create the following services:
