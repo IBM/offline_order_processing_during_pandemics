@@ -32,7 +32,7 @@ When the reader has completed this Code Pattern, they will understand how to:
 <!--Optionally, update this section when the video is created-->
 # Watch the Video
 
-<!--[![](http://img.youtube.com/vi/aA8wTWbmqSU/0.jpg)](https://youtu.be/aA8wTWbmqSU)]-->
+[![](http://img.youtube.com/vi/aA8wTWbmqSU/0.jpg)](https://youtu.be/aA8wTWbmqSU)
 
 ## Pre-requisites
 
@@ -56,7 +56,7 @@ Please follow the below to setup and run this code pattern.
 Clone the `order_processing_during_pandemics` repo locally. In a terminal, run:
 
 ```
-$ git clone https://github.com/IBM/order_processing_during_pandemics
+$ git clone https://github.com/IBM/offline_order_processing_during_pandemics
 ```
 ### 2. Setup Watson Speech to Text
 
