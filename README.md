@@ -249,7 +249,7 @@ Waiting for app to start...
 
 name:              order-processing-pandemic
 requested state:   started
-routes:            <b> order-processing-pandemic.xx-xx.mybluemix.net </b>
+routes:            <b>order-processing-pandemic.xx-xx.mybluemix.net </b>
 last uploaded:     Sat 16 May 18:05:16 IST 2020
 stack:             cflinuxfs3
 buildpacks:        python
@@ -265,3 +265,23 @@ start command:   python app.py
 * Once the app is deployed you can visit the `routes` to view the application.
 
 ### 8. Analyze the results
+
+- Once you visit the url `order-processing-pandemic.xx-xx.mybluemix.net` you will see the following screen.
+
+![output](doc/source/images/output1.png)
+
+- Upload the **English** telephone conversation to get the orders placed by the person as shown.
+
+![output2](doc/source/images/output2.gif)
+
+- You can play the audio to verify that Watson Knowledge Studio is identifying the entities correctly.
+
+![output2](doc/source/images/output2.png)
+
+- Similarly upload the **Hindi** regional telephone conversation to get the orders placed by the person as shown.
+
+![output3](doc/source/images/output3.gif)
+
+- You can play the audio to verify that Watson Knowledge Studio is identifying the entities correctly.
+
+![output3](doc/source/images/output3.png)
