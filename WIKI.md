@@ -89,5 +89,7 @@ This AI powered backend system can be later connected to the inventory database 
 
 > List any IBM Developer resources that are closely related to this pattern, such as other patterns, blog posts, tutorials, etc..
 
-* [title](url): description
-* [title](url): description
+* [How to enhance social distancing to combat the pandemic](url): <<**Content under progress**>>
+* [Online order processing system during pandemic](url): <<**Content under progress**>>
+* [Create an AI powered dashboard for realtime predictions & recommendations](url): <<**Content under progress**>>
+
