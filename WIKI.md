@@ -28,7 +28,7 @@ Use Watson Knowledge Studio and Speech To Text to automate offline order process
 
 # Summary
 
-In this code pattern, we build an AI-powered backend system that can take the daily essentials orders through offline mode. The system processes the audio request by converting it to formatted orders list. A smart way of processing the information quickly.
+In this code pattern, we build an AI-powered backend system that can take the daily essentials orders through offline mode. The system processes the audio request by converting it to formatted orders list. A smart way of processing the information quickly. This AI powered backend system can be later connected to the inventory database for optimising supply chain management aswell. This solution will be applicable into various domains such as ordering medicines and ordering daily essentials(groceries), etc.
 
 # Technologies
 
