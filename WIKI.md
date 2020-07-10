@@ -11,9 +11,9 @@ Use Watson Knowledge Studio and Speech To Text to automate offline order process
 > Provide names and IBM email addresses.
 
 * Rahul Reddy Ravipally <raravi86@in.ibm.com>
-* Sharath Kumar R K  <sharrkum@in.ibm.comm>
 * Manoj Jahgirdar  <manoj.jahgirdar@in.ibm.com>
 * Srikanth Manne  <srikanth.manne@in.ibm.com>
+* Sharath Kumar R K  <sharrkum@in.ibm.comm>
 * Manjula G. Hosurmath  <mhosurma@in.ibm.com>
 
 # URLs
