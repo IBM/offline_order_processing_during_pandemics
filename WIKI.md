@@ -14,7 +14,7 @@ Use Watson Knowledge Studio and Speech To Text to automate offline order process
 * Sharath Kumar R K  <sharrkum@in.ibm.comm>
 * Manoj Jahgirdar  <manoj.jahgirdar@in.ibm.com>
 * Srikanth Manne  <srikanth.manne@in.ibm.com>
-* Msnjula G. Hosurmath  <mhosurma@in.ibm.com>
+* Manjula G. Hosurmath  <mhosurma@in.ibm.com>
 
 # URLs
 
