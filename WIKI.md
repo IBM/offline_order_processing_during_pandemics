@@ -56,7 +56,8 @@ This AI powered backend system can be later connected to the inventory database 
 2. Convert the text into english using Watson Language Translator.
 3. Feed the English text to Watson Knowledge Studio model which is deployed on Watson Natural Language Understanding.
 4. The model deployed on Watson Natural Language Understanding will identify all the required attributes from the text.
-5. Visualize the order and customer details from the recordings on a dashboard.
+5. These extracted attributes gets stored on Db2 on cloud.
+6. Visualize the order and customer details from the recordings on a dashboard.
 
 # Instructions
 
