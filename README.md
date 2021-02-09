@@ -1,4 +1,4 @@
-# Use Watson Knowledge Studio and Speech To Text to automate offline order processing during pandemics
+# Order processing during pandemics for offline mode
 
 How do we stop panic amongst people of hoarding essentials during lockdown? How do we maintain social distancing while procuring essentials?
 
