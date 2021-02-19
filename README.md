@@ -271,21 +271,22 @@ start command:   python app.py
 
 ![output](doc/source/images/output1.png)
 
-- Upload the **English** telephone conversation [2141925623.wav](/data/9192939495.wav) to get the orders placed by the person as shown.
-
-![output2](doc/source/images/output2.gif)
-
-- You can play the audio to verify that Watson Knowledge Studio is identifying the entities correctly.
-
-![output2](doc/source/images/output2.png)
-
-- Similarly upload the **Hindi** regional telephone conversation [9192939495.wav](/data/9192939495.wav) to get the orders placed by the person as shown.
+- Upload the **Hindi** regional telephone conversation [9192939495.wav](/data/9192939495.wav) to get the orders placed by the person as shown.
 
 ![output3](doc/source/images/output3.gif)
 
 - You can play the audio to verify that Watson Knowledge Studio is identifying the entities correctly.
 
 ![output3](doc/source/images/output3.png)
+
+>Note: You can also upload **English** telephone conversations to get the orders.
+
+<!-- 
+- Upload the **English** telephone conversation [2141925623.wav](/data/9192939495.wav) to get the orders placed by the person as shown.
+![output2](doc/source/images/output2.gif)
+- You can play the audio to verify that Watson Knowledge Studio is identifying the entities correctly.
+![output2](doc/source/images/output2.png) 
+-->
 
 
 ## License
