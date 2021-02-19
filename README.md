@@ -277,7 +277,7 @@ start command:   python app.py
 
 - You can play the audio to verify that Watson Knowledge Studio is identifying the entities correctly.
 
-![output3](doc/source/images/output3.png)
+![output3](doc/source/images/output2.png)
 
 >Note: You can also upload **English** telephone conversations to get the orders.
 
